@@ -48,7 +48,7 @@
         {% for category in exercise_categories %}
             <div class="exercise">
                 <a href="{{ url_for('exercisescontroller.exercises', category_id=category['id']) }}">
-                    <img src="{{ url_for('static', filename='images/' + category['image']) }}" alt="{{ category['name'] }} Image">
+                    <img src="{{ url_for('static', filename='/uploads/category_images/' + category['image']) }}" alt="{{ category['name'] }} Image">
                 </a>
                 <h2 class="category-name">{{ category['name'] }}</h2>
             </div>
